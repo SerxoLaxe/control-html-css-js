@@ -2,13 +2,50 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio HTML 1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio HTML 1</title>
 </head>
 
 <body>
+    <fieldset>
+        <legend>Formulario</legend>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" autofocus required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="url">URL:</label>
+                <input type="url" name="url" id="url" placeholder="Escribe la URL de tu página web personal">
+            </fieldset>
+            <fieldset>
+                <legend>Datos numéricos</legend>
+                <label for="date">fecha:</label>
+                <input type="date" name="date" id="date">
+                <label for="time">Hora:</label>
+                <input type="time" name="time" id="time">
+                <label for="dateAndTime">Fecha y hora:</label>
+                <input type="datetime-local" name="dateAndTime" id="dateAndTime">
+                <label for="month">Mes:</label>
+                <input type="month" name="month" id="month">
+                <label for="week">Semana:</label>
+                <input type="week" name="week" id="week">
+                <label for="tlf">Teléfono:</label>
+                <input type="tel" name="tlf" id="tlf">
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <label for="search">Búsqueda:</label>
+                <input type="search" name="search" id="search" disabled>
+                <label for="color">Color Favorito:</label>
+                <input type="color" name="color" id="color">;
+            </fieldset>
+            <button id="sendForm">Enviar</button>
+        </form>
+    </fieldset>
 
 </body>
 

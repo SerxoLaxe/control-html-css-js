@@ -1,0 +1,47 @@
+.lista {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.lista li:last-of-type {
+    background-color: rgb(102, 186, 255);
+}
+
+.lista li:nth-child(odd) {
+    text-decoration-line: underline;
+    text-decoration-color: green;
+}
+
+.lista li:nth-of-type(1)::after {
+    content: '🐶';
+}
+
+.lista li:nth-of-type(2)::after {
+    content: '🐮';
+}
+
+.lista li:nth-of-type(3)::after {
+    content: '🐴';
+}
+
+.lista li:nth-of-type(4)::after {
+    content: '🐐';
+}
+
+.lista li:nth-of-type(5)::after {
+    content: '🐵';
+}
+
+.lista li:nth-of-type(6)::after {
+    content: '🐭';
+}
+
+.lista li:lang(en) {
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+#provincias li:not(:nth-of-type(2)) {
+    list-style: upper-roman;
+}
