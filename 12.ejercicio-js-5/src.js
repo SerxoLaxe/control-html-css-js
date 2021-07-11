@@ -20,12 +20,9 @@ async function getCharsData(url, month) {
     let characterArray = [];
     const episodes = await getEpisodesData(url);
 
-    //Este bucle filtra los personajes según mes y año de estreno del episodio, para luego añadirlos sin duplicarlos en un objeto Set.
+    //Este bucle filtra los personajes según mes de estreno del episodio, para luego añadirlos sin duplicarlos en un objeto Set.
     for (const episode of episodes) {
         const monthString = episode.air_date.substring(0, 3);
-        const yearString = episode.air_date.slice(-4);
-
-
         if (monthString === month) {
             for (const character of episode.characters) {
                 charactersSet.add(character);
