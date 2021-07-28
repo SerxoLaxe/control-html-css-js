@@ -1,14 +1,16 @@
 "use-strict";
 
+/* VERSIÓN COMENTADA */
+
 /* Esta función detecta automáticamente la base del número introducido y pasa el resultado a la función numberConverter */
 function checkNumberBase(nmbr) {
     const nmbrString = nmbr.toString();
-    for (let i = 0; i < nmbrString.length; i++) {
+    for (let i = 0; i < nmbrString.length; i++) {       /* Si encontramos en el string algún caracter que no sea 1 o 0, el número es decimal */
         if (nmbrString[i] !== "1" && nmbrString[i] !== "0") {
             return 10;
         }
     }
-    return 2;
+    return 2;       /* De lo contrario, el número sólo contiene unos y ceros, y probablemente sea binario. */
 }
 
 

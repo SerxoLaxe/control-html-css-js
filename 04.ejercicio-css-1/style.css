@@ -4,15 +4,15 @@
     gap: 10px;
 }
 
-.lista li:last-of-type {
+.lista li:last-of-type {     /* Esto selecciona el último li de la clase .lista */
     background-color: rgb(102, 186, 255);
 }
 
-.lista li:nth-child(odd) {
+.lista li:nth-child(odd) {   /* Esto selecciona todos los elementos de la clase .lista que está en una posición impar */
     text-decoration-line: underline;
     text-decoration-color: green;
 }
-
+/* Estos emoticonos los introduje haciendo uso de la extensión 'Emoji' de VS Code. */
 .lista li:nth-of-type(1)::after {
     content: '🐶';
 }
@@ -37,11 +37,11 @@
     content: '🐭';
 }
 
-.lista li:lang(en) {
+.lista li:lang(en) {    /* Este selector csss selecciona todos los elementos de la clase .lista que tienen el atributo lang como 'en' */
     text-transform: uppercase;
     font-size: 200%;
 }
 
-#provincias li:not(:nth-of-type(2)) {
+#provincias li:not(:nth-of-type(2)) {    /* Este otro selecciona todos los li de la lista de provincias que no son el segundo. */
     list-style: upper-roman;
 }
