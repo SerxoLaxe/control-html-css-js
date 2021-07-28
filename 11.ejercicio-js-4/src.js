@@ -1,6 +1,8 @@
 'use-strict';
 
-const names = [
+/* VERSION COMENTADA*/
+
+const names = [  /* Array con todos los nombres */
     'A-Jay',
     'Manuel',
     'Manuel',
@@ -21,7 +23,7 @@ const names = [
 
 function removeDuplicates(list) {
     const result = list.filter((item, pos) => {
-        return list.indexOf(item) == pos
+        return list.indexOf(item) == pos //Con esto los elementos repetidos se seleccionan una sola vez, sólo cuando coincide su index dentro del array y el detectado según el método indexOf.
     })
     return result
 }
